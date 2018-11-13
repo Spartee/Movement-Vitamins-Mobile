@@ -8,28 +8,30 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import {VitaminList} from './src/VitaminList.js';
+import VitaminList from './src/VitaminList.js';
+import VitaminInfo from './src/VitaminInfo.js';
+import {createStackNavigator} from 'react-navigation';
 
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-    android:
-    'Double tap R on your keyboard to reload,\n' +
-	'Shake or press menu button for dev menu',
+
+
+const App = createStackNavigator({
+    Home: {screen: VitaminList},
+    VitaminInfo: {screen: VitaminInfo}
 });
 
+export default App;
 
-export default class App extends Component {
-    constructor() {
-	super(...arguments);
-//	this.vitaminDropdown = new VitaminList();
-    }
+// export default class App extends Component {
+//     constructor() {
+// 	super(...arguments);
+//     }
 
-    render() {
-	return (
-		<VitaminList></VitaminList>
-	);
-    }
-}
+//     render() {
+// 	return (
+// 		<VitaminList></VitaminList>
+// 	);
+//     }
+// }
 
 const styles = StyleSheet.create({
     container: {

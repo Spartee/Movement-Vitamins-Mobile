@@ -4,9 +4,14 @@ import { View, Text, FlatList } from "react-native";
 import { SearchBar, List, ListItem } from "react-native-elements";
 import * as Papa from "papaparse";
 
-class VitaminList extends Component {
-    constructor(props) {
-	super(props);
+
+export default class VitaminList extends Component {
+    static navigationOptions = {
+        title: "Recommended Vitamins"
+    }
+    
+    constructor() {
+	super(...arguments);
 
 	this.state = {
 	    loading: false,
@@ -58,23 +63,24 @@ class VitaminList extends Component {
     }
     
     render() {
+        const {navigate} = this.props.navigation;
 	return (
 	    <List containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
 	      <FlatList
 		data={this.state.data}
         	keyExtractor={item => item.Name}
-                ItemSeparatorComponent={this.renderSeparator}
+                //ItemSeparatorComponent={this.renderSeparator}
 		renderItem={({item}) => (
 		    <ListItem
 		      title={item.Name}
-		      //subtitle={item.email}
-		      //avatar={{ uri: item.picture.thumbnail }}
+                      //hideChevron
+		    //subtitle={item.email}
+		    //avatar={{ uri: item.picture.thumbnail }}
+                      onPress={() => {console.log("navigating"); navigate('VitaminInfo');}}
 		    />
 		)}
 	      />
 	    </List>
 	);
     }
-}
-
-export {VitaminList};
+};
