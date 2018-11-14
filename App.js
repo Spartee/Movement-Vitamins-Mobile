@@ -10,12 +10,16 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import VitaminList from './src/VitaminList.js';
 import VitaminInfo from './src/VitaminInfo.js';
+import Homescreen from './src/Homescreen.js';
+import ScreeningList from "./src/ScreeningList.js";
 import {createStackNavigator} from 'react-navigation';
 
 
 
 const App = createStackNavigator({
-    Home: {screen: VitaminList},
+    Home: {screen: Homescreen},
+    Screening: {screen: ScreeningList},
+    AllVitamins: {screen: VitaminList},
     VitaminInfo: {screen: VitaminInfo}
 });
 

@@ -4,10 +4,11 @@ import { View, Text, FlatList } from "react-native";
 import { SearchBar, List, ListItem } from "react-native-elements";
 import * as Papa from "papaparse";
 
+import VitaminParse from "./parsing/VitaminParse.js";
 
 export default class VitaminList extends Component {
     static navigationOptions = {
-        title: "Recommended Vitamins"
+        title: "Movement Vitamins"
     }
     
     constructor() {
@@ -29,13 +30,14 @@ export default class VitaminList extends Component {
         const url = "https://raw.githubusercontent.com/Spartee/Movement-Vitamins-Web/master/web/instance/MovementVitamins.csv";
 	this.setState({ loading: true });
 	var res = await (await fetch(url)).text();
-        var parsed = Papa.parse(res, {header:true});
-        //debugger;
+        var preparsed = Papa.parse(res, {header:true});
+
+        
         
 	try {
 	    this.setState({
-		data: parsed.data,
-		error: parsed.errors.length == 0 ? parsed.errors : null,
+		data: preparsed.data.map(VitaminParse),
+		error: preparsed.errors.length == 0 ? preparsed.errors : null,
 		loading: false,
 		refreshing: false
 	    });
@@ -65,22 +67,22 @@ export default class VitaminList extends Component {
     render() {
         const {navigate} = this.props.navigation;
 	return (
-	    <List containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+            <List>
 	      <FlatList
-		data={this.state.data}
-        	keyExtractor={item => item.Name}
-                //ItemSeparatorComponent={this.renderSeparator}
-		renderItem={({item}) => (
+	        data={this.state.data}
+                keyExtractor={item => item.name}
+            //ItemSeparatorComponent={this.renderSeparator}
+	        renderItem={({item}) => (
 		    <ListItem
-		      title={item.Name}
-                      //hideChevron
+		      title={item.name}
+                    //hideChevron
 		    //subtitle={item.email}
 		    //avatar={{ uri: item.picture.thumbnail }}
-                      onPress={() => {console.log("navigating"); navigate('VitaminInfo');}}
+                      onPress={() => {navigate('VitaminInfo', {vitamin:item});}}
 		    />
-		)}
+	        )}
 	      />
-	    </List>
+            </List>
 	);
     }
 };
