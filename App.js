@@ -17,6 +17,7 @@ import {createStackNavigator} from 'react-navigation';
 
 
 const App = createStackNavigator({
+    
     Home: {screen: Homescreen},
     Screening: {screen: ScreeningList},
     AllVitamins: {screen: VitaminList},
@@ -24,18 +25,6 @@ const App = createStackNavigator({
 });
 
 export default App;
-
-// export default class App extends Component {
-//     constructor() {
-// 	super(...arguments);
-//     }
-
-//     render() {
-// 	return (
-// 		<VitaminList></VitaminList>
-// 	);
-//     }
-// }
 
 const styles = StyleSheet.create({
     container: {
