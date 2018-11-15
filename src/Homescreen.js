@@ -28,6 +28,12 @@ export default class Homescreen extends Component {
                          navigate('Screening')
                         }
               />
+              <Button
+                title="Login"
+                onPress={() =>
+                         navigate('Login')
+                        }
+              />
             </View>
         );
     }

@@ -23,19 +23,7 @@ export default class LoginScreen extends Component {
 	const { navigate } = this.props.navigation;
         return (
             <View>
-              <Button
-                height="50"
-                title="All Vitamins"
-                onPress={() =>
-                         navigate('AllVitamins')
-                        }
-              />
-              <Button
-                title="Screening"
-                onPress={() =>
-                         navigate('Screening')
-                        }
-              />
+              <Text>Login Page</Text>
             </View>
         );
     }

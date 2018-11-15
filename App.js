@@ -12,6 +12,7 @@ import VitaminList from './src/VitaminList.js';
 import VitaminInfo from './src/VitaminInfo.js';
 import Homescreen from './src/Homescreen.js';
 import ScreeningList from "./src/ScreeningList.js";
+import LoginScreen from "./src/LoginScreen.js";
 import {createStackNavigator} from 'react-navigation';
 
 
@@ -21,7 +22,8 @@ const App = createStackNavigator({
     Home: {screen: Homescreen},
     Screening: {screen: ScreeningList},
     AllVitamins: {screen: VitaminList},
-    VitaminInfo: {screen: VitaminInfo}
+    VitaminInfo: {screen: VitaminInfo},
+    Login: {screen: LoginScreen}
 });
 
 export default App;

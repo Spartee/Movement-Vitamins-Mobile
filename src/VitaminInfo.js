@@ -37,7 +37,7 @@ export default class VitaminInfo extends Component {
               </View>
               <Text style={styles.descriptionText}> {vitamin.description} </Text>
             </ScrollView>
-	);	
+	);
     }
 };
 
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         padding:20
     },        
     titleText: {
+        fontFamily: "Poly",
         fontSize: 24,
         fontWeight: 'bold',
     },
