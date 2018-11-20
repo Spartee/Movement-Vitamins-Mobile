@@ -8,11 +8,11 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import VitaminList from './src/VitaminList.js';
-import VitaminInfo from './src/VitaminInfo.js';
-import Homescreen from './src/Homescreen.js';
-import ScreeningList from "./src/ScreeningList.js";
-import LoginScreen from "./src/LoginScreen.js";
+import VitaminList from './src/pages/VitaminList.js';
+import VitaminInfo from './src/pages/VitaminInfo.js';
+import Homescreen from './src/pages/Homescreen.js';
+import ScreeningList from "./src/pages/ScreeningList.js";
+import LoginScreen from "./src/pages/LoginScreen.js";
 import {createStackNavigator} from 'react-navigation';
 
 

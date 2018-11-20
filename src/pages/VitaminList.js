@@ -4,7 +4,7 @@ import { View, Text, FlatList } from "react-native";
 import { SearchBar, List, ListItem } from "react-native-elements";
 import * as Papa from "papaparse";
 
-import VitaminParse from "./parsing/VitaminParse.js";
+import VitaminParse from "../parsing/VitaminParse.js";
 
 export default class VitaminList extends Component {
     static navigationOptions = {
