@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>BE626889-D462-4570-9564-4B0021F00D0E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BE626889-D462-4570-9564-4B0021F00D0E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>movement-vites project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>movement-vites</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace movement-vites with scheme movement-vites and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>565042008.64609301</real>
+			<key>timeStoppedRecording</key>
+			<real>565042009.15867496</real>
+			<key>title</key>
+			<string>Building workspace movement-vites with scheme movement-vites and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>BE626889-D462-4570-9564-4B0021F00D0E</string>
+		</dict>
+		<key>CCEDF836-2766-4FF2-9D43-3670207DEA65</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CCEDF836-2766-4FF2-9D43-3670207DEA65.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>movement-vites project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>movement-vites</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace movement-vites with scheme movement-vites and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>565041832.25869095</real>
+			<key>timeStoppedRecording</key>
+			<real>565041833.54415596</real>
+			<key>title</key>
+			<string>Building workspace movement-vites with scheme movement-vites and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>CCEDF836-2766-4FF2-9D43-3670207DEA65</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
