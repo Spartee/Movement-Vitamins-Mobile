@@ -9,6 +9,7 @@ npm-debug.*
 *~
 
 # Xcode
+build/
 !**/*.xcodeproj
 !**/*.pbxproj
 !**/*.xcworkspacedata
@@ -75,6 +76,9 @@ package-lock.json
 
 # Root dir shouldn't have Xcode project
 /*.xcodeproj
+
+# IOS
+
 
 # ReactCommon subdir shouldn't have Xcode project
 /ReactCommon/**/*.xcodeproj
