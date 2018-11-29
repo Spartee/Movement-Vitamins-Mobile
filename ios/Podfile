@@ -6,7 +6,9 @@ target 'movement-vites' do
     :git => "http://github.com/expo/expo.git",
     :tag => "ios/2.9.0",
     :subspecs => [
-      "Core"
+      "Core",
+      "CPP",
+      "GL"
     ],
     :inhibit_warnings => true
   pod 'EXAdsAdMob',
