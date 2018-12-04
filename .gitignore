@@ -25,3 +25,4 @@ chrome-user-data
 *.swo
 android/
 ios/
+flymd.*
