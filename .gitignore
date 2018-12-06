@@ -4,6 +4,7 @@
 
 # Xcode
 #
+Index/
 build/
 *.pbxuser
 !default.pbxuser
@@ -57,3 +58,4 @@ buck-out/
 *~
 .vscode
 flymd.*
+
