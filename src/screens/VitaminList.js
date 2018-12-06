@@ -26,7 +26,7 @@ export default class VitaminList extends Component {
     }
 
     async getData() {
-        // Temporary
+        // Temporary. Will refactor pulling vitamin data once the API supports it.
         const url = "https://raw.githubusercontent.com/Spartee/Movement-Vitamins-Web/master/web/instance/MovementVitamins.csv";
 	this.setState({ loading: true });
 	var res = await (await fetch(url)).text();
