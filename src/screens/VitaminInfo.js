@@ -27,8 +27,8 @@ export default class VitaminInfo extends Component {
                   style={styles.youtube}
                   play
                   onError={() => {console.log("Youtube Error");}}
-            //onReady={() => {this.setState({play:false});}}
-            //                controls={2}
+            onReady={() => {this.setState({play:false});}}
+                           controls={2}
                   modestbranding
                 />
                 <View style={styles.descriptionTitle}>
